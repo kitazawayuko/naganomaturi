@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Taitoru:</strong>
+  <%= @maturi.taitoru %>
+</p>
+
+<p>
+  <strong>市町村:</strong>
+  <%= @maturi.city %>
+</p>
+
+<p>
+  <strong>内容:</strong>
+  <%= @maturi.naiyou %>
+</p>
+
+<p>
+  <strong>投稿者:</strong>
+  <%= @maturi.toukou %>
+</p>
+
+<p>
+  <strong>photo:</strong>
+  <%= image_tag(@maturi.foto_url, width: 600) if @maturi.foto.present? %>
+</p>
+
+<p>
+  <strong>日時:</strong>
+  <%= @maturi.nitiji %>
+</p>
+
+<%= link_to 'Edit', edit_maturi_path(@maturi) %> |
+<%= link_to 'Back', maturis_path %>

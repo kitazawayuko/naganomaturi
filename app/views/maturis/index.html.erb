@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>お祭りリスト</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>タイトル</th>
+      <th>市町村</th>
+      <th>内容</th>
+      <th>投稿者</th>
+      <th>photo</th>
+      <th>日時</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maturis.each do |maturi| %>
+      <tr>
+        <td><%= maturi.taitoru %></td>
+        <td><%= maturi.city %></td>
+        <td><%= maturi.naiyou %></td>
+        <td><%= maturi.toukou %></td>
+        <td><%= maturi.foto %></td>
+        <td><%= maturi.nitiji %></td>
+        <td><%= link_to 'Show', maturi %></td>
+        <td><%= link_to 'Edit', edit_maturi_path(maturi) %></td>
+        <td><%= link_to 'Destroy', maturi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New', new_maturi_path %>

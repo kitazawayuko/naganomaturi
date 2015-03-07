@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  taitoru: MyString
+  city: MyString
+  naiyou: MyText
+  toukou: MyString
+  foto: MyString
+  nitiji: 2015-03-07 11:20:40
+
+two:
+  taitoru: MyString
+  city: MyString
+  naiyou: MyText
+  toukou: MyString
+  foto: MyString
+  nitiji: 2015-03-07 11:20:40
